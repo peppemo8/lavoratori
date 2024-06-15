@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserimento Dati Lavoratori</title>
+</head>
+<body>
+    <h1>Inserimento Dati Lavoratori</h1>
+    <form action="insert_data.php" method="post" enctype="multipart/form-data">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome" required><br>
+        <label for="mansione">Mansione:</label><br>
+        <input type="text" id="mansione" name="mansione" required><br>
+        <label for="sesso">Sesso:</label><br>
+        <select id="sesso" name="sesso" required>
+            <option value="M">Maschio</option>
+            <option value="F">Femmina</option>
+        </select><br>
+        <label for="data_nascita">Data di Nascita:</label><br>
+        <input type="date" id="data_nascita" name="data_nascita" required><br>
+        <label for="data_assunzione">Data di Assunzione:</label><br>
+        <input type="date" id="data_assunzione" name="data_assunzione" required><br>
+        <label for="foto">Foto:</label><br>
+        <input type="file" id="foto" name="foto" required><br><br>
+        <input type="submit" value="Inserisci">
+    </form>
+</body>
+</html>
